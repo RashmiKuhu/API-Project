@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e7b4e4ae-52d8-4dff-83ae-a9d1eb1f1749" activeEnvironment="Default" name="REST Project _Category" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="5136f4bd-a38e-444d-b5e6-faf46dbbef6a" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://rest-api.upskills.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://rest-api.upskills.in</con:endpoint></con:endpoints><con:resource name="Categories" path="/api/rest_admin/categories" id="974fd995-5de4-4504-b53c-0377dbc31f77"><con:settings/><con:parameters/><con:method name="Categories 1" id="a3e6486b-6009-470a-9882-a4d37424ef0e" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400 401</con:status><con:params/><con:element xmlns:cat="http://rest-api.upskills.in/api/rest_admin/categories">cat:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cat="http://rest-api.upskills.in/api/rest_admin/categories">cat:Response</con:element></con:representation><con:request name="AddCategory" id="1ce98294-c133-46dd-8592-a0ae9f78df5d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Content Type" value="application/json" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request>{
+  "category_description": [
+    {
+      "name": "NewCategory",
+      "description": "sample",
+      "language_id": "1",
+      "meta_description": "Meta description of the category",
+      "meta_keyword": "demo, demo2",
+      "meta_title": "meta-title"
+    }
+  ],
+  "image": "",
+  "sort_order": "0",
+  "category_store": [
+    0
+  ],
+  "parent_id": 0,
+  "status": "1",
+  "category_filter": [
+    0
+  ],
+  "column": "1",
+  "top": 0,
+  "category_seo_url": [
+    {
+      "keyword": "new",
+      "language_id": "1",
+      "store_id": "0"
+    }
+  ]
+}</con:request><con:originalUri>http://rest-api.upskills.in/api/rest_admin/categories</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="9e7a75f7-12d6-4927-8994-4e5a5381cc75" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://rest-api.upskills.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://rest-api.upskills.in</con:endpoint></con:endpoints><con:resource name="Id" path="/api/rest_admin/categories{id}" id="355d1156-2755-4677-9383-e035b9d9dc21"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Id 1" id="7e08e599-c0d3-458e-9983-63462622342e" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401 404</con:status><con:params/><con:element xmlns:cat="http://rest-api.upskills.in/api/rest_admin/categories153">cat:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cat="http://rest-api.upskills.in/api/rest_admin/categories153">cat:Response</con:element></con:representation><con:request name="GetCategoryById" id="daa8a102-3195-41b9-9ae5-95e9607976d3" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/categories153</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="153" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="8e5f760a-7322-4dd4-8baa-d7aaeab8ca46" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://rest-api.upskills.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://rest-api.upskills.in</con:endpoint></con:endpoints><con:resource name="Categories" path="/api/rest_admin/categories/{id}" id="619349d4-d68e-4c38-9624-9d60bc2732a0"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="Categories 1" id="e492add0-19de-4506-ba30-4a5e61e2fcff" method="DELETE"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401 400</con:status><con:params/><con:element xmlns:cat="http://rest-api.upskills.in/api/rest_admin/categories/">cat:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cat="http://rest-api.upskills.in/api/rest_admin/categories/">cat:Response</con:element></con:representation><con:request name="DeleteCategory" id="277defff-43e4-48a7-b4c4-1281d6157732" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="id" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="7f3a2de0-b7d6-41c7-b103-26bb22bc2657" name="CategoryTestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="bd1096f0-4909-4feb-8945-0a780cb4f95b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Category_GroovyScript" searchProperties="true"><con:settings/><con:testStep type="groovy" name="DataSource" id="96cda66f-e77e-4f31-9126-4150d44e5333"><con:settings/><con:config><script>import jxl.*
+
+def TestCase = context.testCase
+def FilePath = "C:\\Users\\RASHMISINGH\\Desktop\\Reskill (selenium +API)\\API training\\DataSheet.xls"
+def count
+
+Workbook WorkBook1 = Workbook.getWorkbook(new File(FilePath))
+Sheet Sheet1 = WorkBook1.getSheet(0)
+
+PropertiesTestStep = TestCase.getTestStepByName("CategoryProperties")
+
+count = PropertiesTestStep.getPropertyValue("counter").toInteger()
+
+//If Total records is unknown (at start), get the rowcount from Excel
+if (PropertiesTestStep.getPropertyValue("total").toString() == "")
+	PropertiesTestStep.setPropertyValue("total", Sheet1.getRows().toString())
+
+
+//Read the Excel test data
+Cell name = Sheet1.getCell(0, count)
+Cell description=Sheet1.getCell(1, count)
+Cell metDes = Sheet1.getCell(2, count)
+Cell meta_key = Sheet1.getCell(3,count)
+Cell metatitle =Sheet1.getCell(4,count)
+Cell keyword =Sheet1.getCell(5,count)
+
+
+log.info("Count is : " + count.toString() + " Name : " + name.getContents()+ "Descriptio:" +description.getContents())
+
+//Close workbook
+WorkBook1.close()
+
+
+//Copy the Excel test data to properties in Properties test step
+PropertiesTestStep.setPropertyValue("Name", name.getContents())
+PropertiesTestStep.setPropertyValue("Description", description.getContents())
+PropertiesTestStep.setPropertyValue("meta_description", metDes.getContents())
+PropertiesTestStep.setPropertyValue("meta_keyword", meta_key.getContents())
+PropertiesTestStep.setPropertyValue("meta_title", metatitle.getContents())
+PropertiesTestStep.setPropertyValue("Keyword", keyword.getContents())
+
+PropertiesTestStep.setPropertyValue("counter", count.toString())
+
+</script></con:config></con:testStep><con:testStep type="properties" name="CategoryProperties" id="282ace3b-abb1-48a8-90d9-0b97c0d52da0"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>CategoryId</con:name><con:value>240</con:value></con:property><con:property><con:name>counter</con:name><con:value>0</con:value></con:property><con:property><con:name>end</con:name><con:value>false</con:value></con:property><con:property><con:name>Name</con:name><con:value/></con:property><con:property><con:name>Description</con:name><con:value/></con:property><con:property><con:name>meta_description</con:name><con:value/></con:property><con:property><con:name>total</con:name><con:value/></con:property><con:property><con:name>Keyword</con:name><con:value/></con:property><con:property><con:name>meta_keyword</con:name><con:value/></con:property><con:property><con:name>meta_title</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="AddCategory" id="7f88e1cb-0afc-4981-984b-f3beb44c202f"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/categories" methodName="Categories 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="AddCategory" id="1ce98294-c133-46dd-8592-a0ae9f78df5d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Bearer}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request>{
+  "category_description": [
+    {
+      "name": "${CategoryProperties#Name}",
+      "description": "${CategoryProperties#Description}",
+      "language_id": "1",
+      "meta_description": "${CategoryProperties#meta_description}",
+      "meta_keyword": "${CategoryProperties#meta_keyword}",
+      "meta_title": "${CategoryProperties#meta_title}"
+    }
+  ],
+  "image": "",
+  "sort_order": "0",
+  "category_store": [
+    0
+  ],
+  "parent_id": 0,
+  "status": "1",
+  "category_filter": [
+    0
+  ],
+  "column": "1",
+  "top": 0,
+  "category_seo_url": [
+    {
+      "keyword": "${CategoryProperties#Keyword}",
+      "language_id": "1",
+      "store_id": "0"
+    }
+  ]
+}</con:request><con:originalUri>http://rest-api.upskills.in/api/rest_admin/categories</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="2bd05bc5-2578-4023-af50-37c01d53732d" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="b8f5a438-ef0f-4982-8c51-d878f2824e50" name="JsonPath Match"><con:configuration><path>success</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="InputGetCategory" id="5e70f274-8a9b-46d0-b6f6-cf48d1fa43bc"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def response =testRunner.testCase.testSteps["AddCategory"].testRequest.response.contentAsString
+log.info(response)
+
+def json = new JsonSlurper().parseText(response)
+log.info json.success
+def categoryId=json.data.id.toString()
+log.info(categoryId)
+
+testRunner.testCase.getTestStepByName("CategoryProperties").setPropertyValue("CategoryId",categoryId)
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="GetCategory" id="7a549302-e14c-4aae-a9e9-5e45b9641d4f"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/categories{id}" methodName="Id 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetCategory" id="daa8a102-3195-41b9-9ae5-95e9607976d3" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Bearer}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/categories153</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="09cdd30d-9853-40c9-badd-0f44a640799b" name="Valid HTTP Status Codes"><con:configuration><codes>200
+</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="c15264cf-7602-4036-ba28-a2b34aff9837" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def responseMessage = messageExchange.response.responseContent
+def GetResponse = new JsonSlurper().parseText(responseMessage)
+
+//assert note values 
+assert GetResponse.success==1
+
+// comaring values from the node with properties step
+assert GetResponse.data[0].category_id.toString()==context.expand('${CategoryProperties#CategoryId}')
+assert GetResponse.data[0].name.toString() ==context.expand('${CategoryProperties#Name}')
+assert GetResponse.data[0].description.toString()==context.expand('${CategoryProperties#Description}')</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="${CategoryProperties#CategoryId}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="DeleteCategory" id="73cbbb51-5e82-4900-8bc3-0f9b255d5632"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/categories/{id}" methodName="Categories 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DeleteCategory" id="277defff-43e4-48a7-b4c4-1281d6157732" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Bearer}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/categories/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="dfc8c71a-4266-4bf3-9b46-581a206eab9c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="b6135ce8-9c5e-43d0-bb9e-3de992384608" name="JsonPath Match"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="${CategoryProperties#CategoryId}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="CleanUp" id="139d26ce-186e-44a7-b3a9-eba64b4445b3"><con:settings/><con:config><script>def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("CategoryProperties")
+PropertiesTestStep.setPropertyValue("Name","")
+PropertiesTestStep.setPropertyValue("Description","")
+PropertiesTestStep.setPropertyValue("meta_description","")
+PropertiesTestStep.setPropertyValue("meta_keyword","")
+PropertiesTestStep.setPropertyValue("meta_title","")
+PropertiesTestStep.setPropertyValue("Keyword","")
+PropertiesTestStep.setPropertyValue("counter", "0")
+PropertiesTestStep.setPropertyValue("total", "")
+PropertiesTestStep.setPropertyValue("end", "false")</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="60a8135f-c03e-43ff-8ead-f0451070a89f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Category_PropertyTransfer" searchProperties="true"><con:settings/><con:testStep type="groovy" name="DataSource" id="9ea0a900-a8df-423c-b566-fc865aade328"><con:settings/><con:config><script>import jxl.*
+
+
+def TestCase = context.testCase
+def FilePath = "C:\\Users\\RASHMISINGH\\Desktop\\Reskill (selenium +API)\\API training\\DataSheet.xls"
+def count
+
+Workbook WorkBook1 = Workbook.getWorkbook(new File(FilePath))
+Sheet Sheet1 = WorkBook1.getSheet(0)
+
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+
+count = PropertiesTestStep.getPropertyValue("counter").toInteger()
+
+//If Total records is unknown (at start), get the rowcount from Excel
+if (PropertiesTestStep.getPropertyValue("total").toString() == "")
+	PropertiesTestStep.setPropertyValue("total", Sheet1.getRows().toString())
+
+//count++
+
+//Read the Excel test data
+Cell name = Sheet1.getCell(0, count)
+Cell description=Sheet1.getCell(1, count)
+Cell metDes = Sheet1.getCell(2, count)
+Cell meta_key = Sheet1.getCell(3,count)
+Cell metatitle =Sheet1.getCell(4,count)
+Cell keyword =Sheet1.getCell(5,count)
+
+
+log.info("Count is : " + count.toString() + " Name : " + name.getContents()+ "Descriptio:" +description.getContents())
+
+//Close workbook
+WorkBook1.close()
+
+
+//Copy the Excel test data to properties in Properties test step
+PropertiesTestStep.setPropertyValue("Name", name.getContents())
+PropertiesTestStep.setPropertyValue("Description", description.getContents())
+PropertiesTestStep.setPropertyValue("meta_description", metDes.getContents())
+PropertiesTestStep.setPropertyValue("meta_keyword", meta_key.getContents())
+PropertiesTestStep.setPropertyValue("meta_title", metatitle.getContents())
+PropertiesTestStep.setPropertyValue("Keyword", keyword.getContents())
+
+PropertiesTestStep.setPropertyValue("counter", count.toString())
+
+// check the counter value
+//if (count == PropertiesTestStep.getPropertyValue("total").toInteger() - 1)
+	//PropertiesTestStep.setPropertyValue("end", "true")</script></con:config></con:testStep><con:testStep type="properties" name="Properties" id="e5b4290c-07b7-45a9-9862-12002caf16dd"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>CategoryId</con:name><con:value>241</con:value></con:property><con:property><con:name>counter</con:name><con:value>0</con:value></con:property><con:property><con:name>end</con:name><con:value>false</con:value></con:property><con:property><con:name>Name</con:name><con:value/></con:property><con:property><con:name>Description</con:name><con:value/></con:property><con:property><con:name>meta_description</con:name><con:value/></con:property><con:property><con:name>total</con:name><con:value/></con:property><con:property><con:name>Keyword</con:name><con:value/></con:property><con:property><con:name>meta_keyword</con:name><con:value/></con:property><con:property><con:name>meta_title</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="c0bdf5af-8e94-4eb6-8825-ae1547c65579"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>name</con:name><con:sourceType>Name</con:sourceType><con:sourceStep>Properties</con:sourceStep><con:targetType>Request</con:targetType><con:targetStep>AddCategory</con:targetStep><con:targetPath>category_description[0].name</con:targetPath><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>description</con:name><con:sourceType>Description</con:sourceType><con:sourceStep>Properties</con:sourceStep><con:targetType>Request</con:targetType><con:targetStep>AddCategory</con:targetStep><con:targetPath>category_description[0].description</con:targetPath><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>metaDes</con:name><con:sourceType>meta_description</con:sourceType><con:sourceStep>Properties</con:sourceStep><con:targetType>Request</con:targetType><con:targetStep>AddCategory</con:targetStep><con:targetPath>category_description[0].meta_description</con:targetPath><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>meta_Keyword</con:name><con:sourceType>meta_keyword</con:sourceType><con:sourceStep>Properties</con:sourceStep><con:targetType>Request</con:targetType><con:targetStep>AddCategory</con:targetStep><con:targetPath>category_description[0].meta_keyword</con:targetPath><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>metaTitle</con:name><con:sourceType>meta_title</con:sourceType><con:sourceStep>Properties</con:sourceStep><con:targetType>Request</con:targetType><con:targetStep>AddCategory</con:targetStep><con:targetPath>category_description[0].meta_title</con:targetPath><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="false" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>keyword</con:name><con:sourceType>Keyword</con:sourceType><con:sourceStep>Properties</con:sourceStep><con:targetType>Request</con:targetType><con:targetStep>AddCategory</con:targetStep><con:targetPath>category_seo_url[0].keyword</con:targetPath><con:type>XPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="AddCategory" id="dd0f7f29-2fac-4b61-b449-e6ff99a8e2d7"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/categories" methodName="Categories 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DataSource" id="1ce98294-c133-46dd-8592-a0ae9f78df5d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Bearer}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request>{
+   "category_description": [   {
+      "meta_description": "Electronic",
+      "meta_title": "Electronic ",
+      "meta_keyword": "Electronics Item",
+      "name": "Electronic",
+      "description": "Electronics Item",
+      "language_id": "1"
+   }],
+   "image": "",
+   "top": 0,
+   "parent_id": 0,
+   "category_seo_url": [   {
+      "store_id": "0",
+      "language_id": "1",
+      "keyword": "Elec"
+   }],
+   "column": "1",
+   "category_store": [0],
+   "category_filter": [0],
+   "sort_order": "0",
+   "status": "1"
+}</con:request><con:originalUri>http://rest-api.upskills.in/api/rest_admin/categories</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="3f871217-3b43-4e4d-b2c1-47075bb715b5" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer2" id="f5e0ded7-a952-468c-9af8-cb5705ff3a14"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>categoryId</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>AddCategory</con:sourceStep><con:sourcePath>data.id</con:sourcePath><con:targetType>id</con:targetType><con:targetStep>GetCategory</con:targetStep><con:type>JSONPATH</con:type><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>categoryIdDelete</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>AddCategory</con:sourceStep><con:sourcePath>data.id</con:sourcePath><con:targetType>id</con:targetType><con:targetStep>DeleteCategory</con:targetStep><con:type>JSONPATH</con:type><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>Prop_category</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>AddCategory</con:sourceStep><con:sourcePath>data.id</con:sourcePath><con:targetType>CategoryId</con:targetType><con:targetStep>Properties</con:targetStep><con:type>JSONPATH</con:type><con:upgraded>true</con:upgraded></con:transfers><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>category_get2</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>AddCategory</con:sourceStep><con:sourcePath>data.id</con:sourcePath><con:targetType>id</con:targetType><con:targetStep>GetCategory2</con:targetStep><con:type>JSONPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="GetCategory" id="cdc9290c-17a0-422e-85e5-dc0333b8fd68"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/categories{id}" methodName="Id 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetCategory" id="daa8a102-3195-41b9-9ae5-95e9607976d3" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Bearer}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request>162</con:request><con:originalUri>http://rest-api.upskills.in/api/rest_admin/categories153</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="a8068669-8d68-4b0d-bb29-18b7a82b5e75" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="59d9406b-975e-4725-9b96-d6531ddf66e9" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def responseMessage = messageExchange.response.responseContent
+def GetResponse = new JsonSlurper().parseText(responseMessage)
+//assert node values
+//log.info GetResponse.success
+assert GetResponse.success==1
+
+assert GetResponse.data[0].category_id.toString()==context.expand('${Properties#CategoryId}')//assert GetResponse.data.category_id==context.expand('${Properties#CategoryId'})
+assert GetResponse.data[0].name.toString() ==context.expand('${Properties#Name}')
+assert GetResponse.data[0].description.toString()==context.expand('${Properties#Description}')</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="241" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="DeleteCategory" id="ddba64ec-94b0-4785-af93-59ff23548a1e"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/categories/{id}" methodName="Categories 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DeleteCategory" id="277defff-43e4-48a7-b4c4-1281d6157732" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Bearer}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/categories/162</con:originalUri><con:assertion type="JsonPath Match" id="833f4aff-f930-424d-b62d-b39da158e348" name="JsonPath Match"><con:configuration><path>success</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="bf635567-f2be-4ee6-94ce-2de3ef9c8b9b" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="241" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="CleanUp" id="4d1f5da0-fdbc-49dc-9072-eb625844b5de"><con:settings/><con:config><script>def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+PropertiesTestStep.setPropertyValue("Name","")
+PropertiesTestStep.setPropertyValue("Description","")
+PropertiesTestStep.setPropertyValue("meta_description","")
+PropertiesTestStep.setPropertyValue("meta_keyword","")
+PropertiesTestStep.setPropertyValue("meta_title","")
+PropertiesTestStep.setPropertyValue("Keyword","")
+PropertiesTestStep.setPropertyValue("counter", "0")
+PropertiesTestStep.setPropertyValue("total", "")
+PropertiesTestStep.setPropertyValue("end", "false")</script></con:config></con:testStep><con:testStep type="restrequest" name="GetCategory2" id="6b589753-6752-42b2-a86b-20a89cea02b0"><con:settings/><con:config service="http://rest-api.upskills.in" resourcePath="/api/rest_admin/categories{id}" methodName="Id 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetCategory2" id="daa8a102-3195-41b9-9ae5-95e9607976d3" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${#Project#Bearer}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://rest-api.upskills.in</con:endpoint><con:request/><con:originalUri>http://rest-api.upskills.in/api/rest_admin/categories153</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="8bf1327f-ed77-402e-972d-830dcd1635bc" name="Valid HTTP Status Codes"><con:configuration><codes>404</codes></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="5b9afc35-6bb7-4780-9c7d-14f6531abdaf" name="JsonPath Match"><con:configuration><path>error</path><content>["Category not found"]</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="241" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>Bearer</con:name><con:value>Bearer 7d34ddef8964bc610b7b34fd9b0ee36a6e6e2825</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
